@@ -1,14 +1,14 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import './styles/index.css'
+import './assets/styles/index.css'
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
 
 // Automatic global registration of base components
 const requireComponent = require.context(
   // The relative path of the components folder
-  './elements',
+  './components/elements',
   // Whether or not to look in subfolders
   false,
   // The regular expression used to match base component filenames
