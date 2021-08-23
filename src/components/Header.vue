@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full border-b">
+  <header class="w-full bg-white">
     <div class="max-w-7xl mx-auto px-4 md:px-0">
       <div class="flex items-center h-20 justify-between">
         <!-- Site branding -->
@@ -29,8 +29,8 @@
                 @click="isActive = !isActive"
               ></span>
               <!-- Menu -->
-              <nav v-if="isActive" class="top-24 flex-col absolute left-0 right-0">
-                <div class="mx-4 rounded-md border">
+              <nav v-if="isActive" class="top-24 flex-col absolute left-0 right-0 z-50">
+                <div class="mx-4 rounded-md bg-white">
                   <ul class="items-center p-3">
                     <li
                       v-for="(route,key) in routes"

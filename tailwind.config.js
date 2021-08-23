@@ -6,6 +6,15 @@ module.exports = {
     //   inter: ['Inter', 'sans-serif']
     // },
     extend: {
+      minWidth: {
+        '20': '5.5rem',
+        '32': '8rem',
+        '40': '10rem',
+        '48': '12rem',
+      },
+      backgroundImage: theme => ({
+        'office': "url('../images/office.jpg')"
+      }),
       colors: {
         neutral: '#8a8a8a',
         primary: '#1aceff',
