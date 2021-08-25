@@ -4,6 +4,7 @@
     <Banner />
     <Partners />
     <Features />
+    <Team />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Header from '@/components/Header'
 import Banner from '@/components/Banner'
 import Partners from '@/components/Partners'
 import Features from '@/components/Features'
+import Team from '@/components/Team'
 
 export default {
   name: 'Home',
@@ -19,7 +21,8 @@ export default {
     Header,
     Banner,
     Partners,
-    Features
+    Features,
+    Team
   }
 }
 </script>

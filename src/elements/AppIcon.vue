@@ -4,7 +4,8 @@
     :class="[
       `text-${color}`,
       {
-        'text-xl': large
+        'text-xl': large,
+        'mr-2': left
       }
     ]"
   />
@@ -17,7 +18,8 @@ export default {
     name: { type: String, default: 'ban' },
     type: { type: String, default: 'fas' },
     color: { type: String, default: 'light' },
-    large: { type: Boolean, default: false }
+    large: { type: Boolean, default: false },
+    left: { type: Boolean, default: false }
   }
 }
 </script>

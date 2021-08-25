@@ -208,7 +208,11 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      grayscale: ['group-hover'],
+      scale: ['group-hover'],
+      height: ['hover'],
+    },
   },
   plugins: [],
 }
