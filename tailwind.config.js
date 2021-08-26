@@ -6,11 +6,18 @@ module.exports = {
     //   inter: ['Inter', 'sans-serif']
     // },
     extend: {
+      zIndex: {
+        '1': '1',
+        '-1': '-1',
+      },
       minWidth: {
         '20': '5.5rem',
         '32': '8rem',
         '40': '10rem',
         '48': '12rem',
+      },
+      minHeight: {
+        '12': '3rem',
       },
       backgroundImage: theme => ({
         'office': "url('../images/office.jpg')"

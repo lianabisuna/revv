@@ -5,6 +5,7 @@
     <Partners />
     <Features />
     <Team />
+    <Contact />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Banner from '@/components/Banner'
 import Partners from '@/components/Partners'
 import Features from '@/components/Features'
 import Team from '@/components/Team'
+import Contact from '@/components/Contact'
 
 export default {
   name: 'Home',
@@ -22,7 +24,8 @@ export default {
     Banner,
     Partners,
     Features,
-    Team
+    Team,
+    Contact
   }
 }
 </script>
