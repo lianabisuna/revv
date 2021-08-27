@@ -15,9 +15,18 @@ module.exports = {
         '32': '8rem',
         '40': '10rem',
         '48': '12rem',
+        '96': '24rem'
+      },
+      maxWidth: {
+        '10xl': '100rem'
+      },
+      maxHeight: {
+        '40': '10rem',
       },
       minHeight: {
         '12': '3rem',
+        '56': '14rem',
+        '96': '24rem'
       },
       backgroundImage: theme => ({
         'office': "url('../images/office.jpg')"

@@ -1,6 +1,6 @@
 <template>
   <span
-    class="text-dark-l-5 hover:text-primary cursor-pointer font-semibold"
+    class="text-dark-l-5 text-lg hover:text-primary cursor-pointer font-semibold"
     v-on="$listeners"
   >
     <slot></slot>

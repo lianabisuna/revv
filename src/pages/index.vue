@@ -5,6 +5,7 @@
     <Partners />
     <Features />
     <Team />
+    <Reviews />
     <Contact />
   </div>
 </template>
@@ -15,6 +16,7 @@ import Banner from '@/components/Banner'
 import Partners from '@/components/Partners'
 import Features from '@/components/Features'
 import Team from '@/components/Team'
+import Reviews from '@/components/Reviews'
 import Contact from '@/components/Contact'
 
 export default {
@@ -25,6 +27,7 @@ export default {
     Partners,
     Features,
     Team,
+    Reviews,
     Contact
   }
 }

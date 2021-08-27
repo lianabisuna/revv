@@ -16,7 +16,7 @@
                 v-for="(route,key) in routes"
                 :key="key"
               >
-                <AppTextButton :to="route.to">{{route.name}}</AppTextButton>
+                <AppTextButton @click="scrollTo(route.to)">{{route.name}}</AppTextButton>
               </li>
             </ul>
           </div>
@@ -62,6 +62,12 @@ export default {
       { name: 'Reviews', to: 'reviews' },
       { name: 'Contact', to: 'contact' }
     ]
-  })
+  }),
+  methods: {
+    scrollTo(id) {
+      const element = document.getElementById(id)
+      element.scrollIntoView({behavior: "smooth"})
+    }
+  }
 }
 </script>

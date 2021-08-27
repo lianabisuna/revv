@@ -10,5 +10,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #030407;
+  overflow-x: hidden;
 }
 </style>

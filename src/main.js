@@ -5,11 +5,11 @@ import './assets/styles/index.css'
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faBan, faWrench, faMobileAlt, faFont, faEdit, faGlobe, faLaptopCode, faBrush, faBullhorn, faDesktop, faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faBan, faWrench, faMobileAlt, faFont, faEdit, faGlobe, faLaptopCode, faBrush, faBullhorn, faDesktop, faPhoneAlt, faEnvelope, faQuoteLeft, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 // Font Awesome
-library.add(faBan, faWrench, faMobileAlt, faFont, faEdit, faGlobe, faLaptopCode, faBrush, faBullhorn, faDesktop, faPhoneAlt, faEnvelope)
+library.add(faBan, faWrench, faMobileAlt, faFont, faEdit, faGlobe, faLaptopCode, faBrush, faBullhorn, faDesktop, faPhoneAlt, faEnvelope, faQuoteLeft, faChevronLeft, faChevronRight)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 // Automatic global registration of base components

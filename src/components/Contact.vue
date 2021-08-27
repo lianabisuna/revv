@@ -1,5 +1,5 @@
 <template>
-  <div id="features" class="w-full">
+  <div id="contact" class="w-full">
     <div class="max-w-7xl mx-auto px-4 md:px-16 py-14">
       <div class="flex flex-col md:flex-row items-center space-y-10 md:space-y-0">
         <!-- Contact info -->
