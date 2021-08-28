@@ -24,15 +24,17 @@
             <div class="invisible md:visible absolute -z-1 border-2 border-primary rounded-lg h-full w-full transform -rotate-3">
             </div>
             <!-- Form content -->
-            <div class="h-full md:px-10 md:py-16 mx-4 py-10 space-y-6">
-              <AppTextInput label="Name" placeholder="What's your full name?" />
-              <AppTextInput label="Email" type="email" placeholder="me@company.com" />
-              <AppTextInput label="Subject" placeholder="How can we help you?" />
-              <AppTextInput form="textarea" label="Message" placeholder="Write your message" />
-              <div class="pt-2">
-                <AppButton large block>Send</AppButton>
+            <form>
+              <div class="h-full md:px-10 md:py-16 mx-4 py-10 space-y-6">
+                <AppTextInput dark label="Name" placeholder="What's your full name?" />
+                <AppTextInput dark label="Email" type="email" placeholder="me@company.com" />
+                <AppTextInput dark label="Subject" placeholder="How can we help you?" />
+                <AppTextInput dark form="textarea" label="Message" placeholder="Write your message" />
+                <div class="pt-2">
+                  <AppButton type="submit" large block>Send</AppButton>
+                </div>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>

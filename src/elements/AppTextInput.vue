@@ -5,7 +5,11 @@
       :is="form"
       :type="type"
       :placeholder="placeholder"
-      class="min-h-12 text-lg rounded-md bg-dark border-2 border-neutral-d-7 text-light px-2 py-1 placeholder-neutral focus:outline-none focus:border-primary"
+      :class="[
+        'min-h-12 text-lg rounded-md placeholder-neutral focus:outline-none focus:border-primary',
+        dark ? 'bg-dark border-2 border-neutral-d-7 text-light' : 'bg-light borde-2 border-neutral-d-7 text-dark',
+        large ? 'px-5 py-4' : 'py-1 px-2'
+      ]"
       rows="4"
     ></component>
   </div>
@@ -19,6 +23,8 @@ export default {
     label: { type: String, default: '' },
     type: { type: String, default: 'text' },
     placeholder: { type: String, default: '' },
+    dark: { type: Boolean, default: false },
+    large: { type: Boolean, default: false },
   }
 }
 </script>

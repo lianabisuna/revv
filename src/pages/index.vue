@@ -8,6 +8,8 @@
     <Reviews />
     <Numbers />
     <Contact />
+    <Newsletter />
+    <Footer />
   </div>
 </template>
 
@@ -20,6 +22,8 @@ import Team from '@/components/Team'
 import Reviews from '@/components/Reviews'
 import Numbers from '@/components/Numbers'
 import Contact from '@/components/Contact'
+import Newsletter from '@/components/Newsletter'
+import Footer from '@/components/Footer'
 
 export default {
   name: 'Home',
@@ -31,7 +35,9 @@ export default {
     Team,
     Reviews,
     Numbers,
-    Contact
+    Contact,
+    Newsletter,
+    Footer
   }
 }
 </script>
