@@ -3,12 +3,12 @@
     <div class="max-w-7xl mx-auto px-4 md:px-0 py-14">
       <div class="flex justify-between md:flex-row flex-col space-y-5 md:space-y-0">
         <!-- First -->
-        <div class="md:w-1/3 md:space-y-1 space-y-0 align-center flex flex-col md:justify-end justify-center">
+        <div class="md:w-1/3 md:space-y-2 space-y-0 align-center flex flex-col md:justify-end justify-center">
           <div class="md:mx-0 mx-auto">
             <AppLogo dark />
           </div>
           <div class="text-center md:text-left">
-            <div class="text-sm font-semibold text-dark-l-5 hidden md:block">© 2021 Revv, Inc. Created by <span class="text-light">Liana Bisuña</span></div>
+            <div class="text-sm font-semibold text-dark-l-5 hidden md:block">© Revv 2021. Created by <a href="instagram.com/typecodr" target="_blank" class="text-light">Liana Bisuña</a></div>
           </div>
         </div>
         <!-- Second -->
@@ -17,11 +17,11 @@
             <AppButton large>Try it now</AppButton>
           </div>
           <div class="text-center md:hidden">
-            <div class="text-sm font-semibold text-dark-l-5">© 2021 Revv, Inc. Created by <span class="text-light">Liana Bisuña</span></div>
+            <div class="text-sm font-semibold text-dark-l-5">© Revv 2021. Created by <a href="instagram.com/typecodr" target="_blank" class="text-light">Liana Bisuña</a></div>
           </div>
         </div>
         <!-- Third -->
-        <div class="md:w-1/3 md:space-y-1 space-y-5 align-center flex flex-col md:justify-end justify-center">
+        <div class="md:w-1/3 md:space-y-2 space-y-5 align-center flex flex-col md:justify-end justify-center">
           <div class="flex gap-5 justify-end mx-auto md:mx-0">
             <router-link
               v-for="(media,key) in medias"
@@ -34,7 +34,7 @@
                 :name="media.icon"
                 :type="media.type"
                 color="primary"
-                class="hover:text-primary-d-1"
+                class="hover:text-primary-d-2"
               />
             </router-link>
           </div>

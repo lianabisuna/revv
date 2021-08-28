@@ -37,7 +37,7 @@
             <!-- Navigation -->
             <div class="absolute h-full items-center flex top-0 left-0 md:-left-24 z-20">
               <button
-                class="rounded-full h-14 md:h-16 w-14 md:w-16 bg-light md:bg-dark bg-opacity-50"
+                class="rounded-full h-14 md:h-16 w-14 md:w-16 bg-light md:bg-dark bg-opacity-50 hover:bg-dark-l-10"
                 @click="prevCard"
               >
                 <AppIcon x-large name="chevron-left" />
@@ -45,7 +45,7 @@
             </div>
             <div class="absolute h-full items-center flex top-0 right-0 md:-right-24 z-20">
               <button
-                class="rounded-full h-14 md:h-16 w-14 md:w-16 bg-light md:bg-dark bg-opacity-50"
+                class="rounded-full h-14 md:h-16 w-14 md:w-16 bg-light md:bg-dark bg-opacity-50 hover:bg-dark-l-10"
                 @click="nextCard"
               >
                 <AppIcon x-large name="chevron-right"  />
@@ -91,7 +91,7 @@ export default {
     activeId: null,
     carousel: [],
     reviews: [
-      {id: 1, name: 'Alice Lopez', designation: 'CEO', company: 'Brackson', message: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', avatar: 'alice.jpg'},
+      {id: 1, name: 'Alice Lopez', designation: 'CEO', company: 'Brackson', message: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia anim id est laborum.', avatar: 'alice.jpg'},
       {id: 2, name: 'Gwen Sanchez', designation: 'Technical Director', company: 'Sicily & Jones', message: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', avatar: 'gwen.jpg'},
       {id: 3, name: 'Harry Thompson', designation: 'General Manager', company: 'Ravenhorse', message: 'Molestie nunc non blandit massa enim nec dui. Facilisis leo vel fringilla est ullamcorper. Et malesuada fames ac turpis egestas sed.', avatar: 'harry.jpg'},
       {id: 4, name: 'Stefani Yang', designation: 'Investor', company: 'Market Science', message: 'Sapien pellentesque habitant morbi tristique senectus et netus et malesuada.', avatar: 'stefani.jpg'},

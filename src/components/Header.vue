@@ -24,10 +24,9 @@
           <div class="block md:hidden">
             <div class="flex justify-end gap-10 items-center">
               <!-- Toggle -->
-              <span
-                class="bg-neutral h-6 w-6 rounded-full"
-                @click="isActive = !isActive"
-              ></span>
+              <button @click="isActive = !isActive">
+                <AppIcon x-large name="bars" :color="isActive ? 'primary' : 'dark'" />
+              </button>
               <!-- Menu -->
               <nav v-if="isActive" class="top-24 flex-col absolute left-0 right-0 z-50">
                 <div class="mx-4 rounded-md bg-white">
@@ -37,7 +36,7 @@
                       :key="key"
                       class="px-4 py-4"
                     >
-                      <AppTextButton :to="route.to">{{route.name}}</AppTextButton>
+                      <AppTextButton @click="scrollTo(route.to)">{{route.name}}</AppTextButton>
                     </li>
                   </ul>
                 </div>
@@ -67,6 +66,7 @@ export default {
     scrollTo(id) {
       const element = document.getElementById(id)
       element.scrollIntoView({behavior: "smooth"})
+      this.isActive = false
     }
   }
 }

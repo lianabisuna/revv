@@ -2,10 +2,10 @@ module.exports = {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   darkMode: false,
   theme: {
-    // fontFamily: {
-    //   inter: ['Inter', 'sans-serif']
-    // },
     extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif']
+      },
       zIndex: {
         '1': '1',
         '-1': '-1',

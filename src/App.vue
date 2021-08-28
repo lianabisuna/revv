@@ -11,5 +11,6 @@
   -moz-osx-font-smoothing: grayscale;
   color: #030407;
   overflow-x: hidden;
+  font-family: 'Inter', 'sans-serif';
 }
 </style>

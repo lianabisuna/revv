@@ -13,8 +13,10 @@
         : color
       }`,
       background==='light'
-        ? `hover:bg-${background}-d-5`
-        : `hover:bg-${background}-d-2`,
+        ? `hover:bg-light-d-6`
+        : background==='dark'
+          ? `hover:bg-dark-l-10`
+          : `hover:bg-${background}-d-2`,
       large ? '' : 'w-full md:min-w-32 text-base py-2.5',
       {
         'py-4 text-lg w-full md:min-w-40': large,
