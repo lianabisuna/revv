@@ -10,6 +10,7 @@
         'mr-2': left
       }
     ]"
+    v-bind="$attrs"
   />
 </template>
 

@@ -6,10 +6,11 @@ import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faBan, faWrench, faMobileAlt, faFont, faEdit, faGlobe, faLaptopCode, faBrush, faBullhorn, faDesktop, faPhoneAlt, faEnvelope, faQuoteLeft, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faFacebookF, faTwitter, faInstagram, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 // Font Awesome
-library.add(faBan, faWrench, faMobileAlt, faFont, faEdit, faGlobe, faLaptopCode, faBrush, faBullhorn, faDesktop, faPhoneAlt, faEnvelope, faQuoteLeft, faChevronLeft, faChevronRight)
+library.add(faBan, faWrench, faMobileAlt, faFont, faEdit, faGlobe, faLaptopCode, faBrush, faBullhorn, faDesktop, faPhoneAlt, faEnvelope, faQuoteLeft, faChevronLeft, faChevronRight, faFacebookF, faTwitter, faInstagram, faYoutube, faLinkedin)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 // Automatic global registration of base components

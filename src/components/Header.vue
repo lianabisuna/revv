@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full bg-white">
+  <header id="home" class="w-full bg-white">
     <div class="max-w-7xl mx-auto px-4 md:px-0">
       <div class="flex items-center h-20 justify-between">
         <!-- Site branding -->
