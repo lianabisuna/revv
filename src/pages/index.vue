@@ -6,6 +6,7 @@
     <Features />
     <Team />
     <Reviews />
+    <Numbers />
     <Contact />
   </div>
 </template>
@@ -17,6 +18,7 @@ import Partners from '@/components/Partners'
 import Features from '@/components/Features'
 import Team from '@/components/Team'
 import Reviews from '@/components/Reviews'
+import Numbers from '@/components/Numbers'
 import Contact from '@/components/Contact'
 
 export default {
@@ -28,6 +30,7 @@ export default {
     Features,
     Team,
     Reviews,
+    Numbers,
     Contact
   }
 }

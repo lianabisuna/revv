@@ -26,7 +26,8 @@ module.exports = {
       minHeight: {
         '12': '3rem',
         '56': '14rem',
-        '96': '24rem'
+        '96': '24rem',
+        '100': '28rem'
       },
       backgroundImage: theme => ({
         'office': "url('../images/office.jpg')"
@@ -228,6 +229,7 @@ module.exports = {
       grayscale: ['group-hover'],
       scale: ['group-hover'],
       height: ['hover'],
+      ringWidth: ['hover']
     },
   },
   plugins: [],
