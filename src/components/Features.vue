@@ -31,12 +31,12 @@ export default {
 
   data: () => ({
     features: [
-      { icon: 'wrench', color: 'bg-yellow-600', title: 'Free lifetime updates', description: 'Morbi commodo commodo hendrerit. Donec varius vestibulum viverra.' },
-      { icon: 'mobile-alt', color: 'bg-pink-600', title: 'Responsive layout', description: 'Vestibulum tincidunt id augue ac porttitor. Maecenas eleifend lacinia justo et faucibus.' },
-      { icon: 'font', color: 'bg-purple-600', title: 'Google font support', description: 'Praesent justo ipsum, pulvinar quis leo pretium, varius rhoncus enim.' },
-      { icon: 'edit', color: 'bg-blue-600', title: 'Easy to customize', description: 'Proin eu faucibus ligula. Phasellus consequat quam a ex maximus commodo.' },
-      { icon: 'globe', color: 'bg-green-600', title: 'Browser compatibility', description: 'Phasellus hendrerit erat vitae consequat rhoncus. Curabitur viverra tellus ac metus maximus sollicitudin.' },
-      { icon: 'laptop-code', color: 'bg-red-600', title: 'Maintainable code base', description: 'Aliquam condimentum, nisi vitae aliquam sagittis, lorem lorem dapibus velit, a convallis metus.' }
+      { icon: 'wrench', color: 'yellow-600', title: 'Free lifetime updates', description: 'Morbi commodo commodo hendrerit. Donec varius vestibulum viverra.' },
+      { icon: 'mobile-alt', color: 'pink-600', title: 'Responsive layout', description: 'Vestibulum tincidunt id augue ac porttitor. Maecenas eleifend lacinia justo et faucibus.' },
+      { icon: 'font', color: 'purple-600', title: 'Google font support', description: 'Praesent justo ipsum, pulvinar quis leo pretium, varius rhoncus enim.' },
+      { icon: 'edit', color: 'blue-600', title: 'Easy to customize', description: 'Proin eu faucibus ligula. Phasellus consequat quam a ex maximus commodo.' },
+      { icon: 'globe', color: 'green-600', title: 'Browser compatibility', description: 'Phasellus hendrerit erat vitae consequat rhoncus. Curabitur viverra tellus ac metus maximus sollicitudin.' },
+      { icon: 'laptop-code', color: 'red-600', title: 'Maintainable code base', description: 'Aliquam condimentum, nisi vitae aliquam sagittis, lorem lorem dapibus velit, a convallis metus.' }
     ]
   })
 }

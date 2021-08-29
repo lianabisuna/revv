@@ -3,7 +3,7 @@
     <div class="flex">
       <div
         :class="[`
-          ${color}
+          bg-${color}
           flex items-center justify-center flex-shrink rounded-md h-10 w-10
         `]"
       >
@@ -21,7 +21,7 @@ export default {
 
   props: {
     icon: { type: String, default: '' },
-    color: { type: String, default: 'bg-neutral' },
+    color: { type: String, default: 'neutral' },
     title: { type: String, default: '' },
     description: { type: String, default: '' }
   }

@@ -1,8 +1,57 @@
+function colorGroup(color, light=false, dark=false) {
+  let colorArr = []
+  if (light || dark) {
+    colorArr = [
+      `bg-${color}`,
+      ...extendedColorGroup('bg', color, light, dark),
+      ...extendedColorGroup('text', color, light, dark),
+      ...extendedColorGroup('hover:bg', color, light, dark)
+    ]
+  }
+  else {
+    colorArr = [
+      ...tailwindColorGroup('bg', color),
+      ...tailwindColorGroup('text', color),
+      ...tailwindColorGroup('hover:bg', color)
+    ]
+  }
+  return colorArr
+}
+
+function extendedColorGroup(prefix, color, light, dark) {
+  let arr = [];
+  for (let x = 1; x <= 10; x++) {
+      if (light)
+        arr.push(`${prefix}-${color}-l-${x}`)
+			if (dark)
+        arr.push(`${prefix}-${color}-d-${x}`)
+  }
+  return arr
+}
+
+function tailwindColorGroup(prefix, color) {
+  let arr = [];
+  let ranges = ['50', '100', '200', '300', '400', '500', '600', '700', '800', '900']
+  for (let x = 1; x < ranges.length; x++) {
+    arr.push(`${prefix}-${color}-${ranges[x]}`)
+  }
+  return arr
+}
+
 module.exports = {
   purge: {
     content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
     safelist:[
-      'hover:bg-primary-d-2',
+      ...colorGroup('primary', true, true),
+      ...colorGroup('neutral', true, true),
+      ...colorGroup('dark', true, true),
+      ...colorGroup('light', false, true),
+      ...colorGroup('yellow'),
+      ...colorGroup('pink'),
+      ...colorGroup('purple'),
+      ...colorGroup('blue'),
+      ...colorGroup('green'),
+      ...colorGroup('red')
     ]
   },
   darkMode: false,
