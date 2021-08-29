@@ -24,8 +24,8 @@
           <div class="block md:hidden">
             <div class="flex justify-end gap-10 items-center">
               <!-- Toggle -->
-              <button @click="isActive = !isActive">
-                <AppIcon x-large name="bars" :color="isActive ? 'primary' : 'dark'" />
+              <button @click="isActive = !isActive" class="flex items-center justify-center">
+                <AppIcon x-large :name="isActive ? 'chevron-up' : 'chevron-down'" color="dark" />
               </button>
               <!-- Menu -->
               <nav v-if="isActive" class="top-24 flex-col absolute left-0 right-0 z-50">
