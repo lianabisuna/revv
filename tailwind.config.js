@@ -2,7 +2,7 @@ module.exports = {
   purge: {
     content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
     safelist:[
-      'bg-primary-d-2',
+      'hover:bg-primary-d-2',
     ]
   },
   darkMode: false,
