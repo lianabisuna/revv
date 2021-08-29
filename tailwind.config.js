@@ -1,5 +1,10 @@
 module.exports = {
-  purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+  purge: {
+    content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+    safelist:[
+      'bg-primary',
+    ]
+  },
   darkMode: false,
   theme: {
     extend: {
