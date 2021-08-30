@@ -1,7 +1,23 @@
 <template>
-  <header id="home" class="w-full bg-white">
-    <div class="max-w-7xl mx-auto px-4 md:px-0">
-      <div class="flex items-center h-20 justify-between">
+  <header
+    id="header"
+    :class="[
+      'w-full bg-white z-50',
+      topPage ? 'bg-opacity-90 fixed' : 'bg-white'
+    ]"
+  >
+    <div
+      :class="[
+        'max-w-7xl mx-auto px-4 md:px-0',
+        { 'hidden': !toggleHeader }
+      ]"
+    >
+      <div
+        :class="[
+          'flex items-center justify-between',
+          topPage ? 'h-14' : 'h-20'
+        ]"
+      >
         <!-- Site branding -->
         <div class="flex-shrink-0">
           <AppLogo />
@@ -16,7 +32,12 @@
                 v-for="(route,key) in routes"
                 :key="key"
               >
-                <AppTextButton @click="scrollTo(route.to)">{{route.name}}</AppTextButton>
+                <AppTextButton
+                  :active="activeView===route.to"
+                  @click="scrollTo(route.to)"
+                >
+                  {{route.name}}
+                </AppTextButton>
               </li>
             </ul>
           </div>
@@ -36,7 +57,12 @@
                       :key="key"
                       class="px-4 py-4"
                     >
-                      <AppTextButton @click="scrollTo(route.to)">{{route.name}}</AppTextButton>
+                      <AppTextButton
+                        :active="activeView===route.to"
+                        @click="scrollTo(route.to)"
+                      >
+                        {{route.name}}
+                      </AppTextButton>
                     </li>
                   </ul>
                 </div>
@@ -60,14 +86,43 @@ export default {
       { name: 'Team', to: 'team' },
       { name: 'Reviews', to: 'reviews' },
       { name: 'Contact', to: 'contact' }
-    ]
+    ],
+    prevScroll: 0,
+    toggleHeader: true,
+    topPage: false,
+    activeView: 'home'
   }),
   methods: {
     scrollTo(id) {
       const element = document.getElementById(id)
       element.scrollIntoView({behavior: "smooth"})
       this.isActive = false
-    }
+    },
+    onScroll() {
+      let win = window,
+          doc = document.documentElement,
+          scrollPos = win.pageYOffset || doc.scrollTop,
+          navHeight = document.getElementById('header').offsetHeight
+
+      if (scrollPos == 0) {
+        this.topPage = false
+        return
+      }
+      if (scrollPos > this.prevScroll && scrollPos > navHeight) {
+        this.toggleHeader = false
+      }
+      else if (scrollPos < this.prevScroll) {
+        this.toggleHeader = true
+      }
+
+      this.topPage = true
+      this.prevScroll = scrollPos
+    },
+    // scrolledView(scrollPosition, ) {
+    // }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.onScroll)
   }
 }
 </script>

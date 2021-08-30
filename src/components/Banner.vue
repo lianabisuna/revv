@@ -1,5 +1,5 @@
 <template>
-  <section class="relative h-screen w-full">
+  <section id="home" class="relative h-screen w-full">
     <!-- Background -->
     <div class="wrapper absolute h-full w-full">
       <img src="@/assets/images/office.jpg" alt="banner" class="image h-full w-full object-cover">
