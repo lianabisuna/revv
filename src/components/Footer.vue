@@ -23,10 +23,11 @@
         <!-- Third -->
         <div class="md:w-1/3 md:space-y-2 space-y-5 align-center flex flex-col md:justify-end justify-center">
           <div class="flex gap-5 justify-end mx-auto md:mx-0">
-            <router-link
+            <a
               v-for="(media,key) in medias"
               :key="key"
-              :to="media.to"
+              :href="media.to"
+              target="_blank"
               class="flex items-center"
             >
               <AppIcon
@@ -36,7 +37,7 @@
                 color="primary"
                 class="hover:text-primary-d-2"
               />
-            </router-link>
+            </a>
           </div>
           <ul class="flex gap-5 justify-end mx-auto md:mx-0">
             <li
