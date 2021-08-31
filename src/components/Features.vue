@@ -1,5 +1,5 @@
 <template>
-  <div id="features" class="w-full">
+  <section id="features" class="w-full">
     <div class="max-w-7xl mx-auto px-4 md:px-16 py-14">
       <div class="flex flex-col space-y-8">
         <div class="w-full md:w-8/12 space-y-2">
@@ -22,7 +22,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

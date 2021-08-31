@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full bg-dark">
+  <section class="w-full bg-dark">
     <div class="max-w-7xl mx-auto px-4 md:px-0 py-14">
       <div class="flex justify-between md:flex-row flex-col space-y-5 md:space-y-0">
         <!-- First -->
@@ -49,7 +49,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

@@ -103,26 +103,48 @@ export default {
           doc = document.documentElement,
           scrollPos = win.pageYOffset || doc.scrollTop,
           navHeight = document.getElementById('header').offsetHeight
-
+      // If current position is at the topmost,
+      // set header to full height and full opacity
       if (scrollPos == 0) {
         this.topPage = false
         return
       }
+      // If user scrolls down,
+      // do not show header
       if (scrollPos > this.prevScroll && scrollPos > navHeight) {
         this.toggleHeader = false
       }
+      // If user scrolls up,
+      // show header but smaller
       else if (scrollPos < this.prevScroll) {
         this.toggleHeader = true
       }
-
+      
       this.topPage = true
+      // Set previous scroll to current scroll position
       this.prevScroll = scrollPos
     },
-    // scrolledView(scrollPosition, ) {
-    // }
+    activateNav() {
+      // Get all sections with an ID
+      const sections = document.querySelectorAll("section[id]")
+      // Get current scroll position
+      let scrollY = window.pageYOffset
+      // Loop through the sections to get height, height from top and ID
+      sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = (current.getBoundingClientRect().top + window.pageYOffset) - 50;
+        let sectionId = current.getAttribute("id");
+        // If our current scroll position enters the space where current section on screen is,
+        // set active section id
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          this.activeView = sectionId
+        }
+      })
+    }
   },
   mounted() {
     window.addEventListener('scroll', this.onScroll)
+    window.addEventListener('scroll', this.activateNav)
   }
 }
 </script>

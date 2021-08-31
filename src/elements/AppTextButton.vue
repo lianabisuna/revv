@@ -1,9 +1,9 @@
 <template>
   <span
     :class="[
-      'text-dark-l-5  hover:text-primary cursor-pointer font-semibold',
+      'hover:text-primary cursor-pointer font-semibold',
       small ? 'text-sm' : 'text-lg',
-      { 'text-primary': active }
+      active ? 'text-primary' : 'text-dark-l-5'
     ]"
     v-on="$listeners"
   >

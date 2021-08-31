@@ -1,5 +1,5 @@
 <template>
-  <div id="reviews" class="w-full bg-primary">
+  <section id="reviews" class="w-full bg-primary">
     <div class="max-w-7xl mx-auto px-4 md:px-16 py-14">
       <div class="flex flex-col space-y-8 items-center">
         <div class="w-full">
@@ -80,7 +80,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

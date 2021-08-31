@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full bg-dark relative z-0">
+  <section class="w-full bg-dark relative z-0">
     <div class="bg-light absolute top-0 h-32 w-full -z-1"></div>
     <!-- Newsletter content -->
     <div class="max-w-7xl mx-auto px-4 md:px-16 py-14 z-20">
@@ -26,7 +26,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

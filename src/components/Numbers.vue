@@ -1,5 +1,5 @@
 <template>
-  <div id="team" class="w-full relative h-96 flex items-center">
+  <section class="w-full relative h-96 flex items-center">
     <!-- Background -->
     <div class="wrapper absolute h-full w-full">
       <img src="@/assets/images/work.jpg" alt="work" class="image h-full w-full object-cover">
@@ -21,7 +21,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

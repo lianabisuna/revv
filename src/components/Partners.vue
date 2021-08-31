@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full mb-10">
+  <section class="w-full mb-10">
     <div class="max-w-7xl mx-auto px-4 md:px-0">
       <div class="flex place-content-center py-5 bg">
         <ul class="grid grid-cols-3 md:flex gap-5 py-5 mx-0">
@@ -17,7 +17,7 @@
         </ul>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
