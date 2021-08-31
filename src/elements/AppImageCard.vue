@@ -9,8 +9,8 @@
       :src="require(`@/assets/images/${file}`)"
       alt=""
       :class="[
-        'object-contain w-full h-full block mt-5 filter transform scale-125 group-hover:scale-150',
-        active ? 'scale-150 grayscale-0' : 'grayscale group-hover:grayscale-0'
+        'object-contain w-full h-full block mt-5 filter transform transition duration-500',
+        active ? 'scale-150 grayscale-0' : 'scale-125 grayscale group-hover:grayscale-0 group-hover:scale-135'
       ]"
     >
     <div v-if="active" class="absolute bottom-0 w-full px-2 py-5">

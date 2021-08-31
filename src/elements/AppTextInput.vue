@@ -2,6 +2,7 @@
   <div class="flex flex-col space-y-1">
     <label v-if="label" for="" class="text-light font-semibold">{{label}} <span class="text-red-500">*</span></label>
     <component
+      required
       :is="form"
       :type="type"
       :placeholder="placeholder"
