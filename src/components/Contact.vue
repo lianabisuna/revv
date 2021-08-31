@@ -7,14 +7,18 @@
           <div class="text-4xl md:text-5xl font-black">Let us know how we can help you</div>
           <div class="text-lg font-semibold text-dark-l-6">Aliquam condimentum, nisi vitae aliquam sagittis, lorem lorem dapibus velit, a convallis metus arcu ut leo.</div>
           <div class="space-y-1 pt-5">
-            <div class="flex items-center">
-              <AppIcon left name="phone-alt" color="primary" />
-              <span class="text-dark-l-6 font-semibold">+1 (520) 555-3894</span>
-            </div>
-            <div class="flex items-center">
-              <AppIcon left name="envelope" color="primary" />
-              <span class="text-dark-l-6 font-semibold">support@example.com</span>
-            </div>
+            <a :href="`tel:${number}`" class="group">
+              <div class="flex items-center">
+                <AppIcon left name="phone-alt" color="primary" />
+                <span class="text-dark-l-6 font-semibold group-hover:text-primary">{{number}}</span>
+              </div>
+            </a>
+            <a :href="`mailto:${email}`" class="group">
+              <div class="flex items-center">
+                <AppIcon left name="envelope" color="primary" />
+                <span class="text-dark-l-6 font-semibold group-hover:text-primary">{{email}}</span>
+              </div>
+            </a>
           </div>
         </div>
         <!-- Contact form -->
@@ -47,7 +51,8 @@ export default {
   name: 'Contact',
 
   data: () => ({
-    //
+    number: '+1 (520) 555-3894',
+    email: 'support@example.com'
   })
 }
 </script>
