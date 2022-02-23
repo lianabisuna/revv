@@ -1,24 +1,50 @@
-# revv-template
 
-## Project setup
-```
-npm install
-```
+# REVV
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Vue.js & Tailwind CSS Landing Page Template
+## Features
 
-### Compiles and minifies for production
-```
-npm run build
-```
+🔹 Fully responsive
 
-### Lints and fixes files
-```
-npm run lint
-```
+🔹 Easy to customize
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+🔹 Browser compatibility
+
+🔹 Maintainable codes
+
+🔹 Single page navigation
+
+## Demo
+
+Try it now! https://revv-template.netlify.app
+
+## Sections
+
+A single-page site with 5 sections:
+- Home
+- Features
+- Team
+- Reviews
+- Contact
+
+and sections for header, footer, partners link, social proof and newsletter.
+
+## Built with
+
+- Vue.js 2 (Design Framework)
+- Tailwind CSS (JavaScript Framework)
+- Font Awesome (Icons)
+- 
+## Learnings
+
+In this project, I focused on maximizing the features of Tailwind CSS, getting to know it more and exploring its magic. This also took quite a lot of time in the design phase including its mobile compatibility.
+
+## Screenshots
+
+![App Screenshot](https://github.com/lianabisuna/revv/blob/main/screenshot.jpg?raw=true)
+
+## Explore
+
+Here's a video sample on how it looks—live! 💙
+
+![App Showcase](https://github.com/lianabisuna/revv/blob/main/showcase.gif?raw=true)
