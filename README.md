@@ -2,6 +2,7 @@
 # REVV
 
 Vue.js & Tailwind CSS Landing Page Template
+
 ## Features
 
 🔹 Fully responsive
@@ -20,7 +21,7 @@ Try it now! https://revv-template.netlify.app
 
 ## Sections
 
-A single-page site with 5 sections:
+A single-page app with five sections:
 - Home
 - Features
 - Team
@@ -31,8 +32,8 @@ and sections for header, footer, partners link, social proof and newsletter.
 
 ## Built with
 
-- Vue.js 2 (Design Framework)
-- Tailwind CSS (JavaScript Framework)
+- Vue.js 2 (JavaScript Framework)
+- Tailwind CSS (Design Framework)
 - Font Awesome (Icons)
 - 
 ## Learnings
